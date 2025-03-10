@@ -3,7 +3,7 @@ const { WebSocketServer } = require("ws");
 const geolib = require("geolib");
 
 const app = express();
-const PORT = 3000;
+const PORT = 80;
 
 // Store driver locations
 let drivers = {};
