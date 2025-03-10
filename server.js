@@ -9,8 +9,8 @@ const PORT = 3000;
 let drivers = {};
 
 // Create WebSocket server
-//const wss = new WebSocketServer({ port: 8080 });
-const wss = new WebSocketServer();
+const wss = new WebSocketServer({ port: 8080 });
+
 
 wss.on("connection", (ws) => {
   ws.on("message", (message) => {
@@ -52,6 +52,6 @@ const findNearbyDrivers = (userLat, userLon) => {
 };
 
 app.listen(PORT, () => {
-  //console.log(`Server is running on port ${PORT}`);
-  console.log(`Server is running on port`);
+  console.log(`Server is running on port ${PORT}`);
+  
 });
